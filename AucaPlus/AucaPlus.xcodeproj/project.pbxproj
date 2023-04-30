@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB03EF4E29EB3CD7006EC539 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03EF4D29EB3CD7006EC539 /* FeedViewModel.swift */; };
+		CB03EF5029EB3D6D006EC539 /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03EF4F29EB3D6D006EC539 /* JobsViewModel.swift */; };
+		CB03EF5229EB3D72006EC539 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03EF5129EB3D72006EC539 /* SettingsViewModel.swift */; };
+		CB03EF5429EB3D78006EC539 /* ChatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03EF5329EB3D78006EC539 /* ChatsViewModel.swift */; };
+		CB03EF5A29EB41E1006EC539 /* AucaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03EF5929EB41E1006EC539 /* AucaUser.swift */; };
+		CB03EF5C29EB41E8006EC539 /* AucaUserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03EF5B29EB41E8006EC539 /* AucaUserType.swift */; };
+		CB03EF5E29EB41F5006EC539 /* AucaStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03EF5D29EB41F5006EC539 /* AucaStudent.swift */; };
+		CB03EF6029EB41FC006EC539 /* AucaLecturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03EF5F29EB41FC006EC539 /* AucaLecturer.swift */; };
+		CB03EF6229EB4209006EC539 /* AucaStaff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB03EF6129EB4209006EC539 /* AucaStaff.swift */; };
+		CB1913DB29D77CB6007BC45C /* AucaPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1913DA29D77CB6007BC45C /* AucaPlusApp.swift */; };
+		CB1913DD29D77CB6007BC45C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1913DC29D77CB6007BC45C /* ContentView.swift */; };
+		CB1913DF29D77CB7007BC45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1913DE29D77CB7007BC45C /* Assets.xcassets */; };
+		CB1913E229D77CB7007BC45C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1913E129D77CB7007BC45C /* Preview Assets.xcassets */; };
+		CB1913E429D77CB7007BC45C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1913E329D77CB7007BC45C /* Persistence.swift */; };
+		CB1913E729D77CB7007BC45C /* AucaPlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB1913E529D77CB7007BC45C /* AucaPlus.xcdatamodeld */; };
+		CB1913F229D77CB7007BC45C /* AucaPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1913F129D77CB7007BC45C /* AucaPlusTests.swift */; };
+		CB1913FC29D77CB7007BC45C /* AucaPlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1913FB29D77CB7007BC45C /* AucaPlusUITests.swift */; };
+		CB1913FE29D77CB7007BC45C /* AucaPlusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1913FD29D77CB7007BC45C /* AucaPlusUITestsLaunchTests.swift */; };
+		CB19140B29D77D6C007BC45C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19140A29D77D6C007BC45C /* OnboardingView.swift */; };
+		CB19140D29D77DCC007BC45C /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19140C29D77DCC007BC45C /* AuthenticationView.swift */; };
+		CB19140F29D77EE1007BC45C /* TermsOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19140E29D77EE1007BC45C /* TermsOfServiceView.swift */; };
+		CB19141429D78BD4007BC45C /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB19141329D78BD4007BC45C /* OTPVerificationView.swift */; };
+		CB1923D929FEEE9A008873F8 /* AuthInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1923D829FEEE9A008873F8 /* AuthInfoView.swift */; };
+		CB1923DE29FF04C3008873F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1923DD29FF04C3008873F8 /* Constants.swift */; };
+		CB1923E129FF06D6008873F8 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1923E029FF06D6008873F8 /* AppKeys.swift */; };
+		CB42827529F98BAA00F436C3 /* PostCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42827429F98BAA00F436C3 /* PostCreationViewModel.swift */; };
+		CB42827729F9938500F436C3 /* NewsItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42827629F9938500F436C3 /* NewsItemViewModel.swift */; };
+		CB42827929F99B4C00F436C3 /* NewsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42827829F99B4C00F436C3 /* NewsRowView.swift */; };
+		CB42827B29F99B8600F436C3 /* ResourceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42827A29F99B8600F436C3 /* ResourceRowView.swift */; };
+		CB42827D29F99B9100F436C3 /* AnnouncementRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42827C29F99B9100F436C3 /* AnnouncementRowView.swift */; };
+		CB43EF9A29F70A52000EE752 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43EF9929F70A52000EE752 /* AuthenticationViewModel.swift */; };
+		CB43EF9C29F71287000EE752 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43EF9B29F71287000EE752 /* View+Extensions.swift */; };
+		CB43EFA029F718BB000EE752 /* PostCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43EF9F29F718BB000EE752 /* PostCreatorView.swift */; };
+		CB43EFA629F7199B000EE752 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43EFA529F7199B000EE752 /* News.swift */; };
+		CB43EFA829F719C1000EE752 /* FeedItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43EFA729F719C1000EE752 /* FeedItemViewModel.swift */; };
+		CB43EFAA29F71CF2000EE752 /* FeedBookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43EFA929F71CF2000EE752 /* FeedBookmarksView.swift */; };
+		CBE0D13D29DA09A800AD2C58 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0D13C29DA09A800AD2C58 /* String+Extensions.swift */; };
+		CBE0D14029DA0C9D00AD2C58 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0D13F29DA0C9D00AD2C58 /* AppTabView.swift */; };
+		CBE0D14429DA0CA700AD2C58 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0D14329DA0CA700AD2C58 /* FeedView.swift */; };
+		CBE0D14629DA0CB900AD2C58 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0D14529DA0CB900AD2C58 /* ChatsView.swift */; };
+		CBE0D14829DA0CC100AD2C58 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0D14729DA0CC100AD2C58 /* JobsView.swift */; };
+		CBE0D14C29DA26E100AD2C58 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0D14B29DA26E100AD2C58 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB1913EE29D77CB7007BC45C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB1913CF29D77CB6007BC45C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB1913D629D77CB6007BC45C;
+			remoteInfo = AucaPlus;
+		};
+		CB1913F829D77CB7007BC45C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB1913CF29D77CB6007BC45C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB1913D629D77CB6007BC45C;
+			remoteInfo = AucaPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB03EF4D29EB3CD7006EC539 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		CB03EF4F29EB3D6D006EC539 /* JobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewModel.swift; sourceTree = "<group>"; };
+		CB03EF5129EB3D72006EC539 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		CB03EF5329EB3D78006EC539 /* ChatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewModel.swift; sourceTree = "<group>"; };
+		CB03EF5929EB41E1006EC539 /* AucaUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AucaUser.swift; sourceTree = "<group>"; };
+		CB03EF5B29EB41E8006EC539 /* AucaUserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AucaUserType.swift; sourceTree = "<group>"; };
+		CB03EF5D29EB41F5006EC539 /* AucaStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AucaStudent.swift; sourceTree = "<group>"; };
+		CB03EF5F29EB41FC006EC539 /* AucaLecturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AucaLecturer.swift; sourceTree = "<group>"; };
+		CB03EF6129EB4209006EC539 /* AucaStaff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AucaStaff.swift; sourceTree = "<group>"; };
+		CB1913D729D77CB6007BC45C /* AucaPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AucaPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1913DA29D77CB6007BC45C /* AucaPlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AucaPlusApp.swift; sourceTree = "<group>"; };
+		CB1913DC29D77CB6007BC45C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB1913DE29D77CB7007BC45C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB1913E129D77CB7007BC45C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB1913E329D77CB7007BC45C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CB1913E629D77CB7007BC45C /* AucaPlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AucaPlus.xcdatamodel; sourceTree = "<group>"; };
+		CB1913E829D77CB7007BC45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1913ED29D77CB7007BC45C /* AucaPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AucaPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1913F129D77CB7007BC45C /* AucaPlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AucaPlusTests.swift; sourceTree = "<group>"; };
+		CB1913F729D77CB7007BC45C /* AucaPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AucaPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1913FB29D77CB7007BC45C /* AucaPlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AucaPlusUITests.swift; sourceTree = "<group>"; };
+		CB1913FD29D77CB7007BC45C /* AucaPlusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AucaPlusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB19140A29D77D6C007BC45C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CB19140C29D77DCC007BC45C /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		CB19140E29D77EE1007BC45C /* TermsOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceView.swift; sourceTree = "<group>"; };
+		CB19141329D78BD4007BC45C /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
+		CB1923D829FEEE9A008873F8 /* AuthInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoView.swift; sourceTree = "<group>"; };
+		CB1923DD29FF04C3008873F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB1923E029FF06D6008873F8 /* AppKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
+		CB42827429F98BAA00F436C3 /* PostCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCreationViewModel.swift; sourceTree = "<group>"; };
+		CB42827629F9938500F436C3 /* NewsItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemViewModel.swift; sourceTree = "<group>"; };
+		CB42827829F99B4C00F436C3 /* NewsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRowView.swift; sourceTree = "<group>"; };
+		CB42827A29F99B8600F436C3 /* ResourceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRowView.swift; sourceTree = "<group>"; };
+		CB42827C29F99B9100F436C3 /* AnnouncementRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementRowView.swift; sourceTree = "<group>"; };
+		CB43EF9929F70A52000EE752 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		CB43EF9B29F71287000EE752 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		CB43EF9F29F718BB000EE752 /* PostCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCreatorView.swift; sourceTree = "<group>"; };
+		CB43EFA529F7199B000EE752 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		CB43EFA729F719C1000EE752 /* FeedItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemViewModel.swift; sourceTree = "<group>"; };
+		CB43EFA929F71CF2000EE752 /* FeedBookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBookmarksView.swift; sourceTree = "<group>"; };
+		CBE0D13C29DA09A800AD2C58 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		CBE0D13F29DA0C9D00AD2C58 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		CBE0D14329DA0CA700AD2C58 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		CBE0D14529DA0CB900AD2C58 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		CBE0D14729DA0CC100AD2C58 /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		CBE0D14B29DA26E100AD2C58 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB1913D429D77CB6007BC45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1913EA29D77CB7007BC45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1913F429D77CB7007BC45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB03EF4C29EB3CC9006EC539 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB03EF4D29EB3CD7006EC539 /* FeedViewModel.swift */,
+				CB42827429F98BAA00F436C3 /* PostCreationViewModel.swift */,
+				CB03EF5329EB3D78006EC539 /* ChatsViewModel.swift */,
+				CB03EF4F29EB3D6D006EC539 /* JobsViewModel.swift */,
+				CB03EF5129EB3D72006EC539 /* SettingsViewModel.swift */,
+				CB43EF9929F70A52000EE752 /* AuthenticationViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		CB03EF5529EB4073006EC539 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB43EFA429F71994000EE752 /* Post */,
+				CB03EF5829EB41D9006EC539 /* AucaUser */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB03EF5829EB41D9006EC539 /* AucaUser */ = {
+			isa = PBXGroup;
+			children = (
+				CB03EF5929EB41E1006EC539 /* AucaUser.swift */,
+				CB03EF5B29EB41E8006EC539 /* AucaUserType.swift */,
+				CB03EF5D29EB41F5006EC539 /* AucaStudent.swift */,
+				CB03EF5F29EB41FC006EC539 /* AucaLecturer.swift */,
+				CB03EF6129EB4209006EC539 /* AucaStaff.swift */,
+			);
+			path = AucaUser;
+			sourceTree = "<group>";
+		};
+		CB1913CE29D77CB6007BC45C = {
+			isa = PBXGroup;
+			children = (
+				CB1913D929D77CB6007BC45C /* AucaPlus */,
+				CB1913F029D77CB7007BC45C /* AucaPlusTests */,
+				CB1913FA29D77CB7007BC45C /* AucaPlusUITests */,
+				CB1913D829D77CB6007BC45C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB1913D829D77CB6007BC45C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB1913D729D77CB6007BC45C /* AucaPlus.app */,
+				CB1913ED29D77CB7007BC45C /* AucaPlusTests.xctest */,
+				CB1913F729D77CB7007BC45C /* AucaPlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB1913D929D77CB6007BC45C /* AucaPlus */ = {
+			isa = PBXGroup;
+			children = (
+				CB1913DA29D77CB6007BC45C /* AucaPlusApp.swift */,
+				CB1913DC29D77CB6007BC45C /* ContentView.swift */,
+				CB1923DF29FF06C2008873F8 /* Persistence */,
+				CB1923DA29FF04AE008873F8 /* Helper */,
+				CB03EF5529EB4073006EC539 /* Models */,
+				CB03EF4C29EB3CC9006EC539 /* View Models */,
+				CBE0D13B29DA099D00AD2C58 /* Extensions */,
+				CB19141529D78BD7007BC45C /* Views */,
+				CB19141029D77FE1007BC45C /* Helper Views */,
+				CB1913DE29D77CB7007BC45C /* Assets.xcassets */,
+				CB1913E829D77CB7007BC45C /* Info.plist */,
+				CB1913E529D77CB7007BC45C /* AucaPlus.xcdatamodeld */,
+				CB1913E029D77CB7007BC45C /* Preview Content */,
+			);
+			path = AucaPlus;
+			sourceTree = "<group>";
+		};
+		CB1913E029D77CB7007BC45C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB1913E129D77CB7007BC45C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB1913F029D77CB7007BC45C /* AucaPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB1913F129D77CB7007BC45C /* AucaPlusTests.swift */,
+			);
+			path = AucaPlusTests;
+			sourceTree = "<group>";
+		};
+		CB1913FA29D77CB7007BC45C /* AucaPlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB1913FB29D77CB7007BC45C /* AucaPlusUITests.swift */,
+				CB1913FD29D77CB7007BC45C /* AucaPlusUITestsLaunchTests.swift */,
+			);
+			path = AucaPlusUITests;
+			sourceTree = "<group>";
+		};
+		CB19141029D77FE1007BC45C /* Helper Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Helper Views";
+			sourceTree = "<group>";
+		};
+		CB19141529D78BD7007BC45C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB19140A29D77D6C007BC45C /* OnboardingView.swift */,
+				CB19140E29D77EE1007BC45C /* TermsOfServiceView.swift */,
+				CBE0D13E29DA0C8800AD2C58 /* Dashboard */,
+				CB19141629D78BDD007BC45C /* Authentication */,
+				CB43EF9F29F718BB000EE752 /* PostCreatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB19141629D78BDD007BC45C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CB19140C29D77DCC007BC45C /* AuthenticationView.swift */,
+				CB19141329D78BD4007BC45C /* OTPVerificationView.swift */,
+				CB1923D829FEEE9A008873F8 /* AuthInfoView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CB1923DA29FF04AE008873F8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CB1923DD29FF04C3008873F8 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CB1923DF29FF06C2008873F8 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				CB1913E329D77CB7007BC45C /* Persistence.swift */,
+				CB1923E029FF06D6008873F8 /* AppKeys.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		CB43EFA129F71960000EE752 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				CBE0D14329DA0CA700AD2C58 /* FeedView.swift */,
+				CB42827829F99B4C00F436C3 /* NewsRowView.swift */,
+				CB42827A29F99B8600F436C3 /* ResourceRowView.swift */,
+				CB42827C29F99B9100F436C3 /* AnnouncementRowView.swift */,
+				CB43EFA729F719C1000EE752 /* FeedItemViewModel.swift */,
+				CB42827629F9938500F436C3 /* NewsItemViewModel.swift */,
+				CB43EFA929F71CF2000EE752 /* FeedBookmarksView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		CB43EFA429F71994000EE752 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				CB43EFA529F7199B000EE752 /* News.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		CBE0D13B29DA099D00AD2C58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBE0D13C29DA09A800AD2C58 /* String+Extensions.swift */,
+				CB43EF9B29F71287000EE752 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CBE0D13E29DA0C8800AD2C58 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CBE0D13F29DA0C9D00AD2C58 /* AppTabView.swift */,
+				CB43EFA129F71960000EE752 /* Feed */,
+				CBE0D14729DA0CC100AD2C58 /* JobsView.swift */,
+				CBE0D14529DA0CB900AD2C58 /* ChatsView.swift */,
+				CBE0D14B29DA26E100AD2C58 /* SettingsView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB1913D629D77CB6007BC45C /* AucaPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB19140129D77CB7007BC45C /* Build configuration list for PBXNativeTarget "AucaPlus" */;
+			buildPhases = (
+				CB1913D329D77CB6007BC45C /* Sources */,
+				CB1913D429D77CB6007BC45C /* Frameworks */,
+				CB1913D529D77CB6007BC45C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AucaPlus;
+			productName = AucaPlus;
+			productReference = CB1913D729D77CB6007BC45C /* AucaPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB1913EC29D77CB7007BC45C /* AucaPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB19140429D77CB7007BC45C /* Build configuration list for PBXNativeTarget "AucaPlusTests" */;
+			buildPhases = (
+				CB1913E929D77CB7007BC45C /* Sources */,
+				CB1913EA29D77CB7007BC45C /* Frameworks */,
+				CB1913EB29D77CB7007BC45C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB1913EF29D77CB7007BC45C /* PBXTargetDependency */,
+			);
+			name = AucaPlusTests;
+			productName = AucaPlusTests;
+			productReference = CB1913ED29D77CB7007BC45C /* AucaPlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB1913F629D77CB7007BC45C /* AucaPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB19140729D77CB7007BC45C /* Build configuration list for PBXNativeTarget "AucaPlusUITests" */;
+			buildPhases = (
+				CB1913F329D77CB7007BC45C /* Sources */,
+				CB1913F429D77CB7007BC45C /* Frameworks */,
+				CB1913F529D77CB7007BC45C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB1913F929D77CB7007BC45C /* PBXTargetDependency */,
+			);
+			name = AucaPlusUITests;
+			productName = AucaPlusUITests;
+			productReference = CB1913F729D77CB7007BC45C /* AucaPlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB1913CF29D77CB6007BC45C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CB1913D629D77CB6007BC45C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CB1913EC29D77CB7007BC45C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CB1913D629D77CB6007BC45C;
+					};
+					CB1913F629D77CB7007BC45C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CB1913D629D77CB6007BC45C;
+					};
+				};
+			};
+			buildConfigurationList = CB1913D229D77CB6007BC45C /* Build configuration list for PBXProject "AucaPlus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB1913CE29D77CB6007BC45C;
+			productRefGroup = CB1913D829D77CB6007BC45C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB1913D629D77CB6007BC45C /* AucaPlus */,
+				CB1913EC29D77CB7007BC45C /* AucaPlusTests */,
+				CB1913F629D77CB7007BC45C /* AucaPlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB1913D529D77CB6007BC45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1913E229D77CB7007BC45C /* Preview Assets.xcassets in Resources */,
+				CB1913DF29D77CB7007BC45C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1913EB29D77CB7007BC45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1913F529D77CB7007BC45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB1913D329D77CB6007BC45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB03EF6229EB4209006EC539 /* AucaStaff.swift in Sources */,
+				CB1923E129FF06D6008873F8 /* AppKeys.swift in Sources */,
+				CBE0D14C29DA26E100AD2C58 /* SettingsView.swift in Sources */,
+				CB1913E429D77CB7007BC45C /* Persistence.swift in Sources */,
+				CB43EFA029F718BB000EE752 /* PostCreatorView.swift in Sources */,
+				CB1913DD29D77CB6007BC45C /* ContentView.swift in Sources */,
+				CBE0D14829DA0CC100AD2C58 /* JobsView.swift in Sources */,
+				CB42827D29F99B9100F436C3 /* AnnouncementRowView.swift in Sources */,
+				CBE0D14629DA0CB900AD2C58 /* ChatsView.swift in Sources */,
+				CB03EF4E29EB3CD7006EC539 /* FeedViewModel.swift in Sources */,
+				CB03EF5C29EB41E8006EC539 /* AucaUserType.swift in Sources */,
+				CB03EF5A29EB41E1006EC539 /* AucaUser.swift in Sources */,
+				CB42827729F9938500F436C3 /* NewsItemViewModel.swift in Sources */,
+				CB03EF5429EB3D78006EC539 /* ChatsViewModel.swift in Sources */,
+				CB42827529F98BAA00F436C3 /* PostCreationViewModel.swift in Sources */,
+				CB19140D29D77DCC007BC45C /* AuthenticationView.swift in Sources */,
+				CB1913DB29D77CB6007BC45C /* AucaPlusApp.swift in Sources */,
+				CB43EF9A29F70A52000EE752 /* AuthenticationViewModel.swift in Sources */,
+				CB43EF9C29F71287000EE752 /* View+Extensions.swift in Sources */,
+				CB03EF5229EB3D72006EC539 /* SettingsViewModel.swift in Sources */,
+				CB43EFAA29F71CF2000EE752 /* FeedBookmarksView.swift in Sources */,
+				CB03EF5E29EB41F5006EC539 /* AucaStudent.swift in Sources */,
+				CB03EF5029EB3D6D006EC539 /* JobsViewModel.swift in Sources */,
+				CB1923D929FEEE9A008873F8 /* AuthInfoView.swift in Sources */,
+				CB42827B29F99B8600F436C3 /* ResourceRowView.swift in Sources */,
+				CB43EFA829F719C1000EE752 /* FeedItemViewModel.swift in Sources */,
+				CB43EFA629F7199B000EE752 /* News.swift in Sources */,
+				CB42827929F99B4C00F436C3 /* NewsRowView.swift in Sources */,
+				CBE0D14429DA0CA700AD2C58 /* FeedView.swift in Sources */,
+				CBE0D14029DA0C9D00AD2C58 /* AppTabView.swift in Sources */,
+				CB03EF6029EB41FC006EC539 /* AucaLecturer.swift in Sources */,
+				CBE0D13D29DA09A800AD2C58 /* String+Extensions.swift in Sources */,
+				CB19140B29D77D6C007BC45C /* OnboardingView.swift in Sources */,
+				CB19141429D78BD4007BC45C /* OTPVerificationView.swift in Sources */,
+				CB19140F29D77EE1007BC45C /* TermsOfServiceView.swift in Sources */,
+				CB1923DE29FF04C3008873F8 /* Constants.swift in Sources */,
+				CB1913E729D77CB7007BC45C /* AucaPlus.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1913E929D77CB7007BC45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1913F229D77CB7007BC45C /* AucaPlusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1913F329D77CB7007BC45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1913FE29D77CB7007BC45C /* AucaPlusUITestsLaunchTests.swift in Sources */,
+				CB1913FC29D77CB7007BC45C /* AucaPlusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB1913EF29D77CB7007BC45C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB1913D629D77CB6007BC45C /* AucaPlus */;
+			targetProxy = CB1913EE29D77CB7007BC45C /* PBXContainerItemProxy */;
+		};
+		CB1913F929D77CB7007BC45C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB1913D629D77CB6007BC45C /* AucaPlus */;
+			targetProxy = CB1913F829D77CB7007BC45C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB1913FF29D77CB7007BC45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB19140029D77CB7007BC45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB19140229D77CB7007BC45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AucaPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.AucaPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB19140329D77CB7007BC45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AucaPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.AucaPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB19140529D77CB7007BC45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.AucaPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AucaPlus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AucaPlus";
+			};
+			name = Debug;
+		};
+		CB19140629D77CB7007BC45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.AucaPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AucaPlus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AucaPlus";
+			};
+			name = Release;
+		};
+		CB19140829D77CB7007BC45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.AucaPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AucaPlus;
+			};
+			name = Debug;
+		};
+		CB19140929D77CB7007BC45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V9B6LUW22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.incs.cedricbahirwe.AucaPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AucaPlus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB1913D229D77CB6007BC45C /* Build configuration list for PBXProject "AucaPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1913FF29D77CB7007BC45C /* Debug */,
+				CB19140029D77CB7007BC45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB19140129D77CB7007BC45C /* Build configuration list for PBXNativeTarget "AucaPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB19140229D77CB7007BC45C /* Debug */,
+				CB19140329D77CB7007BC45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB19140429D77CB7007BC45C /* Build configuration list for PBXNativeTarget "AucaPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB19140529D77CB7007BC45C /* Debug */,
+				CB19140629D77CB7007BC45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB19140729D77CB7007BC45C /* Build configuration list for PBXNativeTarget "AucaPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB19140829D77CB7007BC45C /* Debug */,
+				CB19140929D77CB7007BC45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB1913E529D77CB7007BC45C /* AucaPlus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB1913E629D77CB7007BC45C /* AucaPlus.xcdatamodel */,
+			);
+			currentVersion = CB1913E629D77CB7007BC45C /* AucaPlus.xcdatamodel */;
+			path = AucaPlus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB1913CF29D77CB6007BC45C /* Project object */;
+}

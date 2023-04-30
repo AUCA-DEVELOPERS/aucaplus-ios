@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "an app mobile UI for black students named AUCA+. Do not mention black student in the image.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
