@@ -31,12 +31,10 @@ struct AnnouncementRowView: View {
                     }.opacity(0.8)
 
                 } else {
-                    contentView("Hey folks.\nWe're moving our light winter celebration to the office patio on Thursday due to the recent uptick in COVID cases. We'll have heatlamps so you stay warm. Masks will still be required for this.".replacingOccurrences(of: "\n", with: ""))
+                    contentView(announcement.content.replacingOccurrences(of: "\n", with: ""))
 //                        .font(.title3)
                         .lineLimit(2)
                 }
-                
-                
             }
                         
             if isExpanded {
@@ -46,7 +44,7 @@ struct AnnouncementRowView: View {
                     Text("Office party change")
                         .font(.title2)
                     
-                    contentView("Hey folks.\n\nWe're moving our light winter celebration to the office patio on Thursday due to the recent uptick in COVID cases. We'll have heatlamps so you stay warm. Masks will still be required for this.")
+                        contentView(announcement.content)
                         .font(.title3)
                 }
             }
@@ -72,7 +70,7 @@ struct AnnouncementRowView: View {
     }
     
     private func contentView(_ content: String) -> some View {
-        Text(content)
+        Text(AttributedString(content))
     }
 }
 

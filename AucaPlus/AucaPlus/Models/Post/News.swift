@@ -90,11 +90,12 @@ public struct RemoteResource: FeedItem, Codifiable {
 public struct Announcement: FeedItem, Codifiable {
     public var id: String
     public var author: NewsAuthor
+    public var content: String
     public var createdDate: Date = .now
     public var externalLink: URL?
 }
 extension Announcement {
-    static let example = Announcement(id: UUID().uuidString, author: .person)
+    static let example = Announcement(id: UUID().uuidString, author: .person, content: "Hey folks.\n\nWe're moving our light winter celebration to the office patio on Thursday due to the recent uptick in COVID cases. We'll have heatlamps so you stay warm. Masks will still be required for this.")
 }
 public struct ResourceMetadata: Codable {
     public let type: ResourceFileType
@@ -179,4 +180,21 @@ extension News {
         
         return "Today, AUCA & " + str + "'s Bridge Talent Services, signed a MoU in areas of career devpt for students/graduates. The partnership will enhance education-to-employment approach, thus enabling students to learn, apply skills to build career mobility via job readiness workshops."
     }()
+}
+
+
+struct TweetData: Codable {
+    let data: [Tweet]
+}
+
+struct Tweet: FeedItem, Codifiable {
+    var createdDate: Date { createdAt }
+    
+    let id: String
+    let text: String
+    let createdAt: Date    
+        
+    var reference: URL {
+        URL(string: "https://twitter.com/AUCA_Rwanda/status/\(id)")!
+    }
 }

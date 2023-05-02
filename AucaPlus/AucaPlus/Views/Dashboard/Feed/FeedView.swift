@@ -39,8 +39,35 @@ struct FeedView: View {
                         }
                     }
                 }
+                
+                if !feedStore.latestTweets.isEmpty {
+                    
+                    VStack(alignment: .leading) {
+                        Text("Latest Tweeks")
+                            .font(.title2.weight(.bold))
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(feedStore.latestTweets) { tweet in
+                                    VStack(alignment: .leading) {
+                                        Text(tweet.text)
+                                            .lineLimit(3)
+                                        
+                                        Text(tweet.createdDate.formatted(date: .long, time: .shortened))
+                                            .opacity(0.8)
+                                    }
+                                    .padding(10)
+                                    .frame(maxWidth: UIScreen.main.bounds.width*0.9, alignment: .leading)
+                                    .frame(height: 200)
+                                    .background(.regularMaterial)
+                                    .cornerRadius(10)
+                                }
+                                
+                            }
+                        }
+                    }
+                }
             }
-           
             .fullScreenCover(isPresented: $goToCreator) {
                 PostCreatorView()
                     .environmentObject(feedStore)
