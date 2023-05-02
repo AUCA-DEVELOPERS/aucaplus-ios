@@ -59,6 +59,7 @@
 		CBC77ABA2A012ED30012A473 /* TwitterFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC77AB92A012ED30012A473 /* TwitterFeed.swift */; };
 		CBC77ABC2A0130E00012A473 /* AUCAConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBC77ABB2A0130E00012A473 /* AUCAConfig.plist */; };
 		CBC77ABE2A0132710012A473 /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC77ABD2A0132710012A473 /* FileCache.swift */; };
+		CBC77AC22A0157970012A473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC77AC12A0157970012A473 /* AppDelegate.swift */; };
 		CBE0D13D29DA09A800AD2C58 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0D13C29DA09A800AD2C58 /* String+Extensions.swift */; };
 		CBE0D14029DA0C9D00AD2C58 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0D13F29DA0C9D00AD2C58 /* AppTabView.swift */; };
 		CBE0D14429DA0CA700AD2C58 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0D14329DA0CA700AD2C58 /* FeedView.swift */; };
@@ -127,6 +128,7 @@
 		CBC77AB92A012ED30012A473 /* TwitterFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterFeed.swift; sourceTree = "<group>"; };
 		CBC77ABB2A0130E00012A473 /* AUCAConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AUCAConfig.plist; sourceTree = "<group>"; };
 		CBC77ABD2A0132710012A473 /* FileCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCache.swift; sourceTree = "<group>"; };
+		CBC77AC12A0157970012A473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE0D13C29DA09A800AD2C58 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		CBE0D13F29DA0C9D00AD2C58 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		CBE0D14329DA0CA700AD2C58 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -228,8 +230,8 @@
 		CB1913D929D77CB6007BC45C /* AucaPlus */ = {
 			isa = PBXGroup;
 			children = (
-				CBC77AB82A012ECA0012A473 /* Networking */,
 				CBF8494F2A0113EC00F911DE /* App */,
+				CBC77AB82A012ECA0012A473 /* Networking */,
 				CB1923DF29FF06C2008873F8 /* Persistence */,
 				CB1923DA29FF04AE008873F8 /* Helper */,
 				CB03EF5529EB4073006EC539 /* Models */,
@@ -280,6 +282,7 @@
 		CB19141529D78BD7007BC45C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CB1913DC29D77CB6007BC45C /* ContentView.swift */,
 				CB19140A29D77D6C007BC45C /* OnboardingView.swift */,
 				CB19140E29D77EE1007BC45C /* TermsOfServiceView.swift */,
 				CBE0D13E29DA0C8800AD2C58 /* Dashboard */,
@@ -371,8 +374,8 @@
 			isa = PBXGroup;
 			children = (
 				CB1913DA29D77CB6007BC45C /* AucaPlusApp.swift */,
+				CBC77AC12A0157970012A473 /* AppDelegate.swift */,
 				CBC77ABB2A0130E00012A473 /* AUCAConfig.plist */,
-				CB1913DC29D77CB6007BC45C /* ContentView.swift */,
 				CBC77A9B2A01215B0012A473 /* GoogleService-Info.plist */,
 			);
 			path = App;
@@ -530,6 +533,7 @@
 			files = (
 				CB03EF6229EB4209006EC539 /* AucaStaff.swift in Sources */,
 				CB1923E129FF06D6008873F8 /* AppKeys.swift in Sources */,
+				CBC77AC22A0157970012A473 /* AppDelegate.swift in Sources */,
 				CBE0D14C29DA26E100AD2C58 /* SettingsView.swift in Sources */,
 				CB1913E429D77CB7007BC45C /* Persistence.swift in Sources */,
 				CB43EFA029F718BB000EE752 /* PostCreatorView.swift in Sources */,

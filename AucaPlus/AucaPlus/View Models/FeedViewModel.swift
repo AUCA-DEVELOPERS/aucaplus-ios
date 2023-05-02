@@ -19,10 +19,10 @@ final class FeedStore: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     init() {
-//        $filter.sink { [weak self] newFilter in
-//            guard let self = self else { return }
-//            self.getFeed(for: newFilter)
-//        }.store(in: &cancellables)
+        $filter.sink { [weak self] newFilter in
+            guard let self = self else { return }
+            self.getFeed(for: newFilter)
+        }.store(in: &cancellables)
         
         getAUCATwitterFeed()
     }
