@@ -42,6 +42,7 @@
 		CB43EFA629F7199B000EE752 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43EFA529F7199B000EE752 /* News.swift */; };
 		CB43EFA829F719C1000EE752 /* FeedItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43EFA729F719C1000EE752 /* FeedItemViewModel.swift */; };
 		CB43EFAA29F71CF2000EE752 /* FeedBookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43EFA929F71CF2000EE752 /* FeedBookmarksView.swift */; };
+		CB5C35A12A0E35AC004E492E /* FirebaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C35A02A0E35AC004E492E /* FirebaseExtensions.swift */; };
 		CBC77A9C2A01215B0012A473 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBC77A9B2A01215B0012A473 /* GoogleService-Info.plist */; };
 		CBC77A9F2A0124EE0012A473 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CBC77A9E2A0124EE0012A473 /* FirebaseAnalytics */; };
 		CBC77AA12A0124EE0012A473 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CBC77AA02A0124EE0012A473 /* FirebaseAnalyticsSwift */; };
@@ -124,6 +125,7 @@
 		CB43EFA529F7199B000EE752 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		CB43EFA729F719C1000EE752 /* FeedItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemViewModel.swift; sourceTree = "<group>"; };
 		CB43EFA929F71CF2000EE752 /* FeedBookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBookmarksView.swift; sourceTree = "<group>"; };
+		CB5C35A02A0E35AC004E492E /* FirebaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseExtensions.swift; sourceTree = "<group>"; };
 		CBC77A9B2A01215B0012A473 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CBC77AB92A012ED30012A473 /* TwitterFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterFeed.swift; sourceTree = "<group>"; };
 		CBC77ABB2A0130E00012A473 /* AUCAConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AUCAConfig.plist; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		CB1913D929D77CB6007BC45C /* AucaPlus */ = {
 			isa = PBXGroup;
 			children = (
+				CB5C359F2A0E35A0004E492E /* Utils */,
 				CBF8494F2A0113EC00F911DE /* App */,
 				CBC77AB82A012ECA0012A473 /* Networking */,
 				CB1923DF29FF06C2008873F8 /* Persistence */,
@@ -340,6 +343,14 @@
 				CB43EFA529F7199B000EE752 /* News.swift */,
 			);
 			path = Post;
+			sourceTree = "<group>";
+		};
+		CB5C359F2A0E35A0004E492E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CB5C35A02A0E35AC004E492E /* FirebaseExtensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CBC77AB82A012ECA0012A473 /* Networking */ = {
@@ -532,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB03EF6229EB4209006EC539 /* AucaStaff.swift in Sources */,
+				CB5C35A12A0E35AC004E492E /* FirebaseExtensions.swift in Sources */,
 				CB1923E129FF06D6008873F8 /* AppKeys.swift in Sources */,
 				CBC77AC22A0157970012A473 /* AppDelegate.swift in Sources */,
 				CBE0D14C29DA26E100AD2C58 /* SettingsView.swift in Sources */,

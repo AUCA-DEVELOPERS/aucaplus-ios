@@ -42,11 +42,14 @@ struct AuthenticationView: View {
                 Spacer()
                 
                 Button {
-                    if authVM.authModel.isValid() {
-                        showingConfirmationAlert.toggle()
-                    } else {
-                        showingValidationAlert.toggle()
+                    Task {
+                        await FunctionsTest.shared.test()
                     }
+//                    if authVM.authModel.isValid() {
+//                        showingConfirmationAlert.toggle()
+//                    } else {
+//                        showingValidationAlert.toggle()
+//                    }
                 } label: {
                     Text("Next")
                         .bold()
